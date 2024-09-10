@@ -18,12 +18,12 @@ MonoBehaviour:
     m_Storage: []
   m_Images:
   - m_SerializedGuid:
-      m_GuidLow: 5265922277938946093
-      m_GuidHigh: 5075592881739547315
+      m_GuidLow: 5637944274215314258
+      m_GuidHigh: 5391026829615598755
     m_SerializedTextureGuid:
-      m_GuidLow: 0
-      m_GuidHigh: 0
+      m_GuidLow: 7751885973154383721
+      m_GuidHigh: 5101620050579387162
     m_Size: {x: 0, y: 0}
     m_SpecifySize: 0
-    m_Name: 
+    m_Name: Armoirie  - Republique Tcheque
     m_Texture: {fileID: 0}
