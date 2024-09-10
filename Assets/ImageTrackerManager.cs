@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
 public class ImageTrackerManager : MonoBehaviour
 {
@@ -8,44 +9,43 @@ public class ImageTrackerManager : MonoBehaviour
     [SerializeField]
     GameObject m_debugCube;
 
+    GameObject m_debugCubeInstance;
+
     void OnEnable() => m_TrackedImageManager.trackablesChanged.AddListener(OnChanged);
 
     void OnDisable() => m_TrackedImageManager.trackablesChanged.RemoveListener(OnChanged);
 
     void OnChanged(ARTrackablesChangedEventArgs<ARTrackedImage> eventArgs)
     {
-        Debug.Log(
-            $"There are {m_TrackedImageManager.trackables.count} images being tracked."
-        );
-
-        foreach (var trackedImage in m_TrackedImageManager.trackables)
-        {
-            Debug.Log(
-                $"Image: {trackedImage.referenceImage.name} is at " + $"{trackedImage.transform.position}"
-            );
-        }
-
         foreach (var newImage in eventArgs.added)
         {
             if (newImage.referenceImage.name == "ID1")
             {
-                Debug.Log("Detected image");
-                Instantiate(m_debugCube, newImage.transform);
+                m_debugCubeInstance = Instantiate(m_debugCube, newImage.transform);
+                Debug.Log(newImage.trackingState);
             }
         }
 
         foreach (var updatedImage in eventArgs.updated)
         {
-            // Handle updated event
+
+            if (updatedImage.referenceImage.name == "ID1")
+            {
+                Debug.Log(updatedImage.trackingState);
+                if (m_debugCubeInstance.activeInHierarchy && updatedImage.trackingState.Equals(TrackingState.Limited))
+                {
+                    m_debugCubeInstance.SetActive(false);
+                }
+                else if (!m_debugCubeInstance.activeInHierarchy && updatedImage.trackingState.Equals(TrackingState.Tracking))
+                {
+                    m_debugCubeInstance.SetActive(true);
+                }
+            }
         }
 
         foreach (var removedImage in eventArgs.removed)
         {
-            if (removedImage.Value.referenceImage.name == "ID1")
-            {
-                Debug.Log("image out of FOV");
-                Destroy(m_debugCube);
-            }
+
         }
     }
 }
