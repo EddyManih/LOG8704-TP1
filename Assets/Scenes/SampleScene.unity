@@ -1143,7 +1143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TrackedImageManager: {fileID: 301219142}
-  m_debugCube: {fileID: 7190559763459483146, guid: cec25213e5ba74da1ae7d3e2036e000d,
+  m_debugCube: {fileID: 5314231259780421278, guid: a8d56218f264ecb4cbda314a36a49bb1,
     type: 3}
 --- !u!1001 &331264285
 PrefabInstance:
@@ -1252,6 +1252,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 301219143}
+    - targetCorrespondingSourceObject: {fileID: 2512387469002778309, guid: 48cb3fb68c91eb94999fd99957eb0cae,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
 --- !u!114 &331264286 stripped
 MonoBehaviour:

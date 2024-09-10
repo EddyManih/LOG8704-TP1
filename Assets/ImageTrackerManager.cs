@@ -14,10 +14,22 @@ public class ImageTrackerManager : MonoBehaviour
 
     void OnChanged(ARTrackablesChangedEventArgs<ARTrackedImage> eventArgs)
     {
+        Debug.Log(
+            $"There are {m_TrackedImageManager.trackables.count} images being tracked."
+        );
+
+        foreach (var trackedImage in m_TrackedImageManager.trackables)
+        {
+            Debug.Log(
+                $"Image: {trackedImage.referenceImage.name} is at " + $"{trackedImage.transform.position}"
+            );
+        }
+
         foreach (var newImage in eventArgs.added)
         {
-            if (newImage.name == "Armoirie  - Republique Tcheque")
+            if (newImage.referenceImage.name == "ID1")
             {
+                Debug.Log("Detected image");
                 Instantiate(m_debugCube, newImage.transform);
             }
         }
@@ -29,8 +41,9 @@ public class ImageTrackerManager : MonoBehaviour
 
         foreach (var removedImage in eventArgs.removed)
         {
-            if (removedImage.Value.name == "Armoirie  - Republique Tcheque")
+            if (removedImage.Value.referenceImage.name == "ID1")
             {
+                Debug.Log("image out of FOV");
                 Destroy(m_debugCube);
             }
         }
