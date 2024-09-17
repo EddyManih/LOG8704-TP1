@@ -1,15 +1,15 @@
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
 public class ImageTrackerManager : MonoBehaviour
 {
-    [SerializeField]
-    ARTrackedImageManager m_TrackedImageManager;
-    [SerializeField]
-    GameObject m_debugCube;
+    [SerializeField] ARTrackedImageManager m_TrackedImageManager;
+    [SerializeField] GameObject m_countryNamePrefab;
 
-    GameObject m_debugCubeInstance;
+    readonly Dictionary<TrackableId, GameObject> m_trackedImages = new();
 
     void OnEnable() => m_TrackedImageManager.trackablesChanged.AddListener(OnChanged);
 
@@ -19,33 +19,36 @@ public class ImageTrackerManager : MonoBehaviour
     {
         foreach (var newImage in eventArgs.added)
         {
-            if (newImage.referenceImage.name == "ID1")
+            if (newImage.referenceImage.name == "EtatsUnis")
             {
-                m_debugCubeInstance = Instantiate(m_debugCube, newImage.transform);
-                Debug.Log(newImage.trackingState);
+                InstantiateCountryName(newImage, "États-Unis");
+            }
+            else if (newImage.referenceImage.name == "Mexique")
+            {
+                InstantiateCountryName(newImage, "Mexique");
             }
         }
 
         foreach (var updatedImage in eventArgs.updated)
         {
+            GameObject tracked_country_name = m_trackedImages[updatedImage.trackableId];
 
-            if (updatedImage.referenceImage.name == "ID1")
+            if (tracked_country_name.activeInHierarchy && updatedImage.trackingState.Equals(TrackingState.Limited))
             {
-                Debug.Log(updatedImage.trackingState);
-                if (m_debugCubeInstance.activeInHierarchy && updatedImage.trackingState.Equals(TrackingState.Limited))
-                {
-                    m_debugCubeInstance.SetActive(false);
-                }
-                else if (!m_debugCubeInstance.activeInHierarchy && updatedImage.trackingState.Equals(TrackingState.Tracking))
-                {
-                    m_debugCubeInstance.SetActive(true);
-                }
+                tracked_country_name.SetActive(false);
+            }
+            else if (!tracked_country_name.activeInHierarchy && updatedImage.trackingState.Equals(TrackingState.Tracking))
+            {
+                tracked_country_name.SetActive(true);
             }
         }
+    }
 
-        foreach (var removedImage in eventArgs.removed)
-        {
-
-        }
+    private void InstantiateCountryName(ARTrackedImage newImage, string countryName)
+    {
+        GameObject countryNameObj = Instantiate(m_countryNamePrefab, newImage.transform);
+        TextMeshPro countryNameText = countryNameObj.transform.GetComponent<TextMeshPro>();
+        countryNameText.text = countryName;
+        m_trackedImages.Add(newImage.trackableId, countryNameObj);
     }
 }
