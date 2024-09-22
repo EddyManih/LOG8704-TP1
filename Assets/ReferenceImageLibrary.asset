@@ -27,7 +27,7 @@ MonoBehaviour:
       m_GuidHigh: 16018888084041936281
     m_Size: {x: 0.2, y: 0.1054}
     m_SpecifySize: 1
-    m_Name: EtatsUnis
+    m_Name: US
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5560769052961793642
@@ -37,5 +37,5 @@ MonoBehaviour:
       m_GuidHigh: 6648291002359688825
     m_Size: {x: 0.2, y: 0.114}
     m_SpecifySize: 1
-    m_Name: Mexique
+    m_Name: MX
     m_Texture: {fileID: 0}
