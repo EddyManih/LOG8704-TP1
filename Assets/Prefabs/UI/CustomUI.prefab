@@ -346,8 +346,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5524541122552051746}
-        m_TargetAssemblyTypeName: GoalManager, Assembly-CSharp
+      - m_Target: {fileID: 7001374639502441104}
+        m_TargetAssemblyTypeName: CustomGoalManager, Assembly-CSharp
         m_MethodName: StartCoaching
         m_Mode: 1
         m_Arguments:
@@ -772,7 +772,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7255184438098054235}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ARTemplateMenuManager, Assembly-CSharp
         m_MethodName: ShowHideModal
         m_Mode: 1
@@ -3203,8 +3203,8 @@ GameObject:
   - component: {fileID: 5552203499283635492}
   - component: {fileID: 7851963475955203752}
   - component: {fileID: 3103152238809802430}
-  - component: {fileID: 5524541122552051746}
-  - component: {fileID: 7255184438098054235}
+  - component: {fileID: 775054769886429266}
+  - component: {fileID: 7001374639502441104}
   m_Layer: 5
   m_Name: CustomUI
   m_TagString: Untagged
@@ -3299,7 +3299,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &5524541122552051746
+--- !u!114 &775054769886429266
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3308,42 +3308,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 7331727959676031964}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30f0e07d95a4d497bbc3dbd22d792191, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_StepList:
-  - stepObject: {fileID: 0}
-    buttonText: 
-    includeSkipButton: 0
-  m_ObjectSpawner: {fileID: 0}
-  m_GreetingPrompt: {fileID: 5395323216543259749}
-  m_OptionsButton: {fileID: 1393752505749787731}
-  m_CreateButton: {fileID: 2317889712585784910}
-  m_MenuManager: {fileID: 0}
---- !u!114 &7255184438098054235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7331727959676031964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f708c04c3dca17f4dbdc065df6a0c397, type: 3}
+  m_Script: {fileID: 11500000, guid: c0b59560b28d78c4a865e1a92dd60e08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_CreateButton: {fileID: 9037107437117675166}
   m_DeleteButton: {fileID: 8822090474737458161}
-  m_ObjectMenu: {fileID: 0}
+  m_ObjectMenu: {fileID: 7411156585595537932}
   m_ModalMenu: {fileID: 0}
-  m_ObjectMenuAnimator: {fileID: 0}
+  m_ObjectMenuAnimator: {fileID: 6983733312394290967}
   m_ObjectSpawner: {fileID: 0}
   m_CancelButton: {fileID: 2238260869773671182}
   m_InteractionGroup: {fileID: 0}
   m_DebugPlaneSlider: {fileID: 0}
   m_DebugPlane: {fileID: 0}
   m_PlaneManager: {fileID: 0}
-  m_DebugMenu: {fileID: 0}
   m_DebugMenuSlider: {fileID: 0}
   m_TapStartPositionInput:
     m_InputSourceMode: 2
@@ -3351,12 +3329,13 @@ MonoBehaviour:
       m_Name: Tap Start Position
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 6de336c0-e80c-4a10-b91a-52f8919bd72b
+      m_Id: 5dd9cd5d-b80f-4273-8459-f59e84b9aee9
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_InputActionReference: {fileID: 0}
+    m_InputActionReference: {fileID: 2494954584338170553, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
     m_ObjectReferenceObject: {fileID: 0}
     m_ManualValue: {x: 0, y: 0}
   m_DragCurrentPositionInput:
@@ -3365,14 +3344,33 @@ MonoBehaviour:
       m_Name: Drag Current Position
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: fe910ef9-ab40-4454-a1fc-a45c8f8a7994
+      m_Id: aaadfc4b-7169-4543-be5c-f01ff4995167
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_InputActionReference: {fileID: 0}
+    m_InputActionReference: {fileID: -7530398834462728267, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
     m_ObjectReferenceObject: {fileID: 0}
     m_ManualValue: {x: 0, y: 0}
+--- !u!114 &7001374639502441104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7331727959676031964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1444407a283d3e4b9d45f67050d9712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StepList: []
+  m_ObjectSpawner: {fileID: 0}
+  m_GreetingPrompt: {fileID: 5395323216543259749}
+  m_OptionsButton: {fileID: 1393752505749787731}
+  m_CreateButton: {fileID: 2317889712585784910}
+  m_MenuManager: {fileID: 775054769886429266}
 --- !u!1 &7352541786941717775
 GameObject:
   m_ObjectHideFlags: 0
