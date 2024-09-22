@@ -29,6 +29,7 @@ public class ImageTrackerManager : MonoBehaviour
             }
         }
 
+        /*
         foreach (var updatedImage in eventArgs.updated)
         {
             GameObject tracked_country_name = m_trackedImages[updatedImage.trackableId];
@@ -42,6 +43,7 @@ public class ImageTrackerManager : MonoBehaviour
                 tracked_country_name.SetActive(true);
             }
         }
+        */
     }
 
     private void InstantiateCountryName(ARTrackedImage newImage, string countryName)
