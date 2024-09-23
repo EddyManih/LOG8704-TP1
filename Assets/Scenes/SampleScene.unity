@@ -8743,6 +8743,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 775054769886429266, guid: d84a286abd7c93541995a6b8ea805d19,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 775054769886429266, guid: d84a286abd7c93541995a6b8ea805d19,
+        type: 3}
       propertyPath: m_PlaneManager
       value: 
       objectReference: {fileID: 151853166}
