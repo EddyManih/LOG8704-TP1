@@ -203,6 +203,8 @@ public class CustomGoalManager : MonoBehaviour
         if (m_OnboardingGoals.Count > 0)
         {
             m_CurrentGoal = m_OnboardingGoals.Dequeue();
+            Debug.Log(m_CurrentGoalIndex);
+            Debug.Log(m_StepList);
             m_StepList[m_CurrentGoalIndex - 1].stepObject.SetActive(false);
             m_StepList[m_CurrentGoalIndex].stepObject.SetActive(true);
         }
