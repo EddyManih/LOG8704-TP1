@@ -8754,6 +8754,11 @@ PrefabInstance:
       propertyPath: m_InteractionGroup
       value: 
       objectReference: {fileID: 2001374502}
+    - target: {fileID: 1245495900866529671, guid: d84a286abd7c93541995a6b8ea805d19,
+        type: 3}
+      propertyPath: m_ObjectSpawner
+      value: 
+      objectReference: {fileID: 436358033}
     - target: {fileID: 1746320736488647086, guid: d84a286abd7c93541995a6b8ea805d19,
         type: 3}
       propertyPath: m_AnchorMax.y
