@@ -15,6 +15,8 @@ public class ImageTrackerManager : MonoBehaviour
     {
         { "US", new Dictionary<string, string>() { {"fr", "États-Unis"}, {"en", "United States"} }},
         { "MX", new Dictionary<string, string>() { {"fr", "Mexique"}, {"en", "Mexico"} }},
+        { "EG", new Dictionary<string, string>() { {"fr", "Égypte"}, {"en", "Egypt"} }},
+        { "GR", new Dictionary<string, string>() { {"fr", "Grèce"}, {"en", "Greece"} }},
     };
 
     readonly Dictionary<TrackableId, GameObject> m_trackedImages = new();
