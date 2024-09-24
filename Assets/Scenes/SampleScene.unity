@@ -9130,6 +9130,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: db52c216740514f44a86169f2af3918d,
         type: 3}
+    - target: {fileID: 3211809715667805276, guid: d84a286abd7c93541995a6b8ea805d19,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -265.6
+      objectReference: {fileID: 0}
     - target: {fileID: 3635759037127740139, guid: d84a286abd7c93541995a6b8ea805d19,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -9703,6 +9708,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Maya Pyramid
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219612349388535593, guid: d84a286abd7c93541995a6b8ea805d19,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -365.6
       objectReference: {fileID: 0}
     - target: {fileID: 8527512976090737560, guid: d84a286abd7c93541995a6b8ea805d19,
         type: 3}
