@@ -8754,6 +8754,11 @@ PrefabInstance:
       propertyPath: m_InteractionGroup
       value: 
       objectReference: {fileID: 2001374502}
+    - target: {fileID: 1245495900866529671, guid: d84a286abd7c93541995a6b8ea805d19,
+        type: 3}
+      propertyPath: m_ObjectSpawner
+      value: 
+      objectReference: {fileID: 436358033}
     - target: {fileID: 1746320736488647086, guid: d84a286abd7c93541995a6b8ea805d19,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -8889,6 +8894,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -100
       objectReference: {fileID: 0}
+    - target: {fileID: 5146213820595523874, guid: d84a286abd7c93541995a6b8ea805d19,
+        type: 3}
+      propertyPath: m_ObjectSpawner
+      value: 
+      objectReference: {fileID: 436358033}
     - target: {fileID: 5330660049837197992, guid: d84a286abd7c93541995a6b8ea805d19,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -9200,6 +9210,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -100
       objectReference: {fileID: 0}
+    - target: {fileID: 8968595728048871814, guid: d84a286abd7c93541995a6b8ea805d19,
+        type: 3}
+      propertyPath: m_PlaneManager
+      value: 
+      objectReference: {fileID: 151853166}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
