@@ -23,11 +23,17 @@ public class ObjectSelectionManager : MonoBehaviour
             if (m_ObjectSpawner.objectPrefabs.Count > objectIndex)
             {
                 m_ObjectSpawner.spawnOptionIndex = objectIndex;
+                Invoke("Close", 0.1f);
             }
             else
             {
                 Debug.LogWarning("Object Spawner not configured correctly: object index larger than number of Object Prefabs.");
             }
         }
+    }
+
+    private void Close()
+    {
+        gameObject.SetActive(false);
     }
 }
