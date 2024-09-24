@@ -8,7 +8,7 @@ public class ImageTrackerManager : MonoBehaviour
 {
     [SerializeField] ARTrackedImageManager m_TrackedImageManager;
     [SerializeField] GameObject m_countryNamePrefab;
-    [SerializeField] DropdownManager m_languageDropdownManager;
+    [SerializeField] LanguageManager m_languageManager;
     private string m_selectedLanguage;
 
     Dictionary<string, Dictionary<string, string>> m_countryNames = new Dictionary<string, Dictionary<string, string>>()
@@ -24,14 +24,14 @@ public class ImageTrackerManager : MonoBehaviour
     void OnEnable()
     {
         m_TrackedImageManager.trackablesChanged.AddListener(OnChanged);
-        m_languageDropdownManager.m_languageChanged.AddListener(OnLanguageChanged);
+        m_languageManager.m_languageChanged.AddListener(OnLanguageChanged);
         m_selectedLanguage = "en";
     }
 
     void OnDisable()
     {
         m_TrackedImageManager.trackablesChanged.RemoveListener(OnChanged);
-        m_languageDropdownManager.m_languageChanged.RemoveListener(OnLanguageChanged);
+        m_languageManager.m_languageChanged.RemoveListener(OnLanguageChanged);
     }
 
     void OnChanged(ARTrackablesChangedEventArgs<ARTrackedImage> eventArgs)
