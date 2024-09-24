@@ -27,8 +27,6 @@ public class ButtonManager : MonoBehaviour
         {
             if (!m_DeleteButton.activeSelf)
             {
-                Debug.Log("Enabled");
-                Debug.Log(m_DeleteButton.name);
                 m_DeleteButton.SetActive(true);
             }
         }
@@ -36,8 +34,6 @@ public class ButtonManager : MonoBehaviour
         {
             if (m_DeleteButton.activeSelf)
             {
-                Debug.Log("Disabled");
-                Debug.Log(m_DeleteButton.name);
                 m_DeleteButton.SetActive(false);
             }
         }
