@@ -1880,7 +1880,8 @@ PrefabInstance:
       propertyPath: m_Spacing
       value: 15
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 775054769886429266, guid: d84a286abd7c93541995a6b8ea805d19, type: 3}
     m_RemovedGameObjects:
     - {fileID: 7597945226128524550, guid: d84a286abd7c93541995a6b8ea805d19, type: 3}
     - {fileID: 6195757111751072087, guid: d84a286abd7c93541995a6b8ea805d19, type: 3}
