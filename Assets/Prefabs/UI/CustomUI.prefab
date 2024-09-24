@@ -1030,8 +1030,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ARTemplateMenuManager, Assembly-CSharp
+      - m_Target: {fileID: 5146213820595523874}
+        m_TargetAssemblyTypeName: ObjectSelectionManager, Assembly-CSharp
         m_MethodName: SetObjectToSpawn
         m_Mode: 3
         m_Arguments:
@@ -2141,8 +2141,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ARTemplateMenuManager, Assembly-CSharp
+      - m_Target: {fileID: 5146213820595523874}
+        m_TargetAssemblyTypeName: ObjectSelectionManager, Assembly-CSharp
         m_MethodName: SetObjectToSpawn
         m_Mode: 3
         m_Arguments:
@@ -3824,8 +3824,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ARTemplateMenuManager, Assembly-CSharp
+      - m_Target: {fileID: 5146213820595523874}
+        m_TargetAssemblyTypeName: ObjectSelectionManager, Assembly-CSharp
         m_MethodName: SetObjectToSpawn
         m_Mode: 3
         m_Arguments:
@@ -4245,8 +4245,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ARTemplateMenuManager, Assembly-CSharp
+      - m_Target: {fileID: 5146213820595523874}
+        m_TargetAssemblyTypeName: ObjectSelectionManager, Assembly-CSharp
         m_MethodName: SetObjectToSpawn
         m_Mode: 3
         m_Arguments:
@@ -4824,8 +4824,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ARTemplateMenuManager, Assembly-CSharp
+      - m_Target: {fileID: 5146213820595523874}
+        m_TargetAssemblyTypeName: ObjectSelectionManager, Assembly-CSharp
         m_MethodName: SetObjectToSpawn
         m_Mode: 3
         m_Arguments:
@@ -5684,8 +5684,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ARTemplateMenuManager, Assembly-CSharp
+      - m_Target: {fileID: 5146213820595523874}
+        m_TargetAssemblyTypeName: ObjectSelectionManager, Assembly-CSharp
         m_MethodName: SetObjectToSpawn
         m_Mode: 3
         m_Arguments:
@@ -6162,6 +6162,7 @@ GameObject:
   - component: {fileID: 2312563439488734533}
   - component: {fileID: 2006584372511264220}
   - component: {fileID: 6983733312394290967}
+  - component: {fileID: 5146213820595523874}
   m_Layer: 5
   m_Name: Object Menu Animator
   m_TagString: Untagged
@@ -6228,6 +6229,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5146213820595523874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7668890887678796220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5441796a70b8d94aac401b2dc0d50f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ObjectSpawner: {fileID: 0}
 --- !u!1 &7862224819810499379
 GameObject:
   m_ObjectHideFlags: 0
@@ -6872,8 +6886,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ARTemplateMenuManager, Assembly-CSharp
+      - m_Target: {fileID: 5146213820595523874}
+        m_TargetAssemblyTypeName: ObjectSelectionManager, Assembly-CSharp
         m_MethodName: SetObjectToSpawn
         m_Mode: 3
         m_Arguments:
