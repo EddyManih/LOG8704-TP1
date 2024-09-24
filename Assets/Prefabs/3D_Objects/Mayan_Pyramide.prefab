@@ -242,17 +242,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: da0ae4639be4f4312a975b918cab51d6,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.03
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da0ae4639be4f4312a975b918cab51d6,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.03
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da0ae4639be4f4312a975b918cab51d6,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.03
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da0ae4639be4f4312a975b918cab51d6,
         type: 3}
@@ -314,6 +314,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mayan_Pyramide
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: da0ae4639be4f4312a975b918cab51d6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: da0ae4639be4f4312a975b918cab51d6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: da0ae4639be4f4312a975b918cab51d6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: da0ae4639be4f4312a975b918cab51d6,
         type: 3}
@@ -555,8 +570,8 @@ MonoBehaviour:
   m_PlaneClassificationsList: 
   m_PlaneClassifications: 0
   m_UseInteractorOrientation: 0
-  m_MinScale: 0.03
-  m_MaxScale: 0.12
+  m_MinScale: 0.5
+  m_MaxScale: 2
   m_ScaleSensitivity: 0.75
   m_Elasticity: 0.15
   m_EnableElasticBreakLimit: 1
