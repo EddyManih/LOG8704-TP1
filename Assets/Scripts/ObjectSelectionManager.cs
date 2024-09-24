@@ -12,7 +12,6 @@ public class ObjectSelectionManager : MonoBehaviour
         set => m_ObjectSpawner = value;
     }
 
-
     public void SetObjectToSpawn(int objectIndex)
     {
         if (m_ObjectSpawner == null)
