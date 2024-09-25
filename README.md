@@ -1,4 +1,4 @@
-La scène à build pour tester le projet est Assets/Scenes/PolyTourisme.unity
+La scène à build pour tester le projet est Assets/Scenes/PolyTourisme.unity.
 L'application a principalement été testée avec un iPhone 14 Pro Max
 
 Les images de drapeaux qu'il est possible de détecté sont: États-Unis, Mexique, Honk-Kong, Serbie
