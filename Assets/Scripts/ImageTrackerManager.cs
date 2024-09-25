@@ -15,7 +15,6 @@ public class ImageTrackerManager : MonoBehaviour
     {
         { "US", new Dictionary<string, string>() { {"fr", "États-Unis"}, {"en", "United States"} }},
         { "MX", new Dictionary<string, string>() { {"fr", "Mexique"}, {"en", "Mexico"} }},
-        { "HK", new Dictionary<string, string>() { {"fr", "Hong Kong"}, {"en", "Hong Kong"} }},
         { "SR", new Dictionary<string, string>() { {"fr", "Serbie"}, {"en", "Serbia"} }},
     };
 
